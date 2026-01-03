@@ -5,7 +5,7 @@ test('test', async ({ page }) => {
   await page.locator('#checkBoxOption1').check();
   await page.locator('#checkBoxOption2').check();
   await page.getByRole('textbox', { name: 'Enter Your Name' }).click();
-  await page.getByRole('textbox', { name: 'Enter Your Name' }).fill('Git Update');
+  await page.getByRole('textbox', { name: 'Enter Your Name' }).fill('Git Update change');
   page.once('dialog', dialog => {
     console.log(`Dialog message: ${dialog.message()}`);
     dialog.dismiss().catch(() => {});
