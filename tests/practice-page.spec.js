@@ -12,7 +12,7 @@ test('test', async ({ page }) => {
   });
   await page.getByRole('button', { name: 'Alert' }).click();
   await page.getByRole('textbox', { name: 'Type to Select Countries' }).click();
-  await page.getByRole('textbox', { name: 'Type to Select Countries' }).fill('me');
+  await page.getByRole('textbox', { name: 'Type to Select Countries' }).fill('arm');
  
   await expect(page.getByRole('link', { name: 'Open Tab' })).toBeVisible();
   await expect(page.locator('body')).toContainText('Dropdown Example');
