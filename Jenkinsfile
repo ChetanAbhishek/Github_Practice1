@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/ChetanAbhishek/MINIPROJECT_DEMO1.git'
+                    url: 'https://github.com/ChetanAbhishek/Github_Practice1.git'
             }
         }
 
